@@ -23,7 +23,6 @@ while i < 4000000:
 		sum = sum + b
 	# print("sum = ", sum)
 	a, b = fib(a, b)
-	sum 
 	i += a
 
 print("final sum = ", sum)
