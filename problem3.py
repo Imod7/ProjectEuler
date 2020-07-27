@@ -13,6 +13,7 @@ def prime_num(num):
 # num = 13195 # largest prime -> 29
 # num = 27465 # largest prime -> 1831
 # num = 228 # largest prime -> 19
+# num = 87216 # largest prime -> 79
 num = 600851475143 # largest prime -> 6857
 
 div = 2
@@ -24,7 +25,6 @@ while num > 2:
 		div = div + 1
 		while (prime_num(div) == 0):
 			div = div + 1
-	
 	print("next prime :", div)
 	list.append(div)
 	num = int(num / div)
