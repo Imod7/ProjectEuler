@@ -10,8 +10,10 @@ def prime_num(num):
 		i += 1
 	return (1)
 
-num = 600851475143
-# num = 228
+# num = 13195 # largest prime -> 29
+# num = 27465 # largest prime -> 1831
+# num = 228 # largest prime -> 19
+num = 600851475143 # largest prime -> 6857
 
 div = 2
 list = []
@@ -22,10 +24,9 @@ while num > 2:
 		div = div + 1
 		while (prime_num(div) == 0):
 			div = div + 1
-		break
-	else:
-		print("next prime :", div)
-		list.append(div)
-		num = int(num / div)
+	
+	print("next prime :", div)
+	list.append(div)
+	num = int(num / div)
 
 print("largest prime factor :", list[-1])
